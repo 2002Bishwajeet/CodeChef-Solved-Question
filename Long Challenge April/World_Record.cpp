@@ -10,7 +10,7 @@ while(t--)
     float k1,k2,k3,v;
     cin>>k1>>k2>>k3>>v;
     float finalspeed =k1*k2*k3*v;
-
+// This one below to round off
     float time = 100/finalspeed;
      float rtime= (int)(time * 100 + .5);
      rtime = float(rtime)/100;
