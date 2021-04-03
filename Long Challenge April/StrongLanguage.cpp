@@ -1,3 +1,4 @@
+/*
 #include <iostream>
 #include <bits/stdc++.h>
 #include <string>
@@ -32,6 +33,48 @@ int main()
             cout << "NO" << endl;
     else
       cout<<"Yes"<<endl;
+    }
+    return 0;
+}
+OlD Approach with one TLE
+*/
+
+//New Approach without TLE
+#include<bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int test;
+    cin>>test;
+    while(test--)
+    {
+      int n,k;
+      cin>>n>>k;
+      char s[n];
+      for(int i=0;i<n;i++)
+      {
+          cin>>s[i];
+      }
+      int ans=0,l=0;
+      for(int i=0;i<n;i++)
+      {
+          if(s[i]== '*')
+          {
+              ans++;
+              if(ans==k)
+              {
+                  cout<<"YES"<<endl;
+                  l++;
+                  break;
+              }
+          }
+          else
+          ans=0;
+      }
+      if(l==0)
+      cout<<"NO"<<endl;
+      
     }
     return 0;
 }
