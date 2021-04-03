@@ -13,6 +13,10 @@ while(t--)
     ll x = n%4;
     ll y = n/4;
     ll a2=0,b3=0,c4=0,d5=0,e=0,f=0;
+    /*
+    Yaha pe a2 two faces  visible ka maximum sum
+    waise hi b3 , c4 ,d5 ka 15 18 and 20 resp
+    */
     switch (x)
     {
     case 1: d5=1; break; //5 faces
