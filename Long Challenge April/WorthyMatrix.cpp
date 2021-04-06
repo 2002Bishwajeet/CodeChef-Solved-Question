@@ -20,15 +20,9 @@ while(t--)
    }
    int ans=0;
    int count=0;
-   int flag=0;
-   if(n==m)
-   flag=1;
-   else if(n<m) //row less than column
-   flag=2;
-   else
-   flag=0; //column less than row
+  int l=min(n,m);
 
-   //This Will Happen Regardless of Rows and Columns cause its square matrix
+   //This Will Happen Regardless of Rows and Columns cause 1x1 is a square matrix
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
@@ -38,22 +32,10 @@ while(t--)
         }
         
     }
-  if(flag==1) //mltb rows and columns same
-  {
-      //Let's Try to Create 2x2
-      for (int i = 0; i < n; i++)
-      {
-          for(int j=0;j<2;j++)
-          {
-              for(int k=0;k<2;k++)
-              cout<<ar[i+j][i+k]<<" ";
-              cout<<endl;
-          }
-          cout<<"--------------------"<<endl;
-      }
-      
-  }
- //cout<<ans<<endl;   
+ //Now let's Start the Loop
+ 
+  
+ cout<<ans<<endl;   
 }
     return 0;
 }
